@@ -1,0 +1,25 @@
+[package]
+name = "HardbodyCluster"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+adafruit-qt-py-rp2040 = "0.8.0"
+cortex-m-rt = "0.7.3"
+embedded-alloc = "0.5.1"
+embedded-graphics = "0.8.1"
+embedded-hal = "1.0.0"
+fugit = "0.3.7"
+panic-halt = "0.2.0"
+rp2040-boot2 = "0.3.0"
+rp2040-hal = "0.10.2"
+ssd1306 = "0.10.0"
+micromath = "2.1.0"
+embedded-hal-bus = "0.3.0"
+ads1x1x = "0.3.0"
+nb = "1.1.0"
+
+[profile.dev]
+panic = "abort"
+[profile.release]
+panic = "abort"
